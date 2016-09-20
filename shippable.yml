@@ -6,7 +6,6 @@ rvm:
 
 build: 
   ci: 
-    - gem install bundler --no-ri --no-rdoc 
     - bundle install 
     - rake db:setup 
     - bundle exec rake test
