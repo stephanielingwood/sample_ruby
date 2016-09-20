@@ -7,7 +7,7 @@ rvm:
 build: 
   ci: 
     - echo "$SHIPPABLE_RUBY"
-    - rvm use $SHIPPABLE_RUBY
+    # - rvm use $SHIPPABLE_RUBY
     - bundle install 
     - rake db:setup 
     - bundle exec rake test
