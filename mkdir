@@ -1,0 +1,3 @@
+#! /bin/bash
+
+export PATH=$SHIPPABLE_BUILD_DIR
