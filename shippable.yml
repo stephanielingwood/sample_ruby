@@ -6,6 +6,7 @@ rvm:
 
 build: 
   ci: 
+    - echo "$SHIPPABLE_RUBY"
     - bundle install 
     - rake db:setup 
     - bundle exec rake test
