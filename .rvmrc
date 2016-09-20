@@ -1,1 +1,5 @@
-rvm use 2.0.0@stephgemset
+if [ -z $SHIPPABLE_BUILD_DIR ]; then 
+  rvm use 2.0.0
+else 
+  rvm use 2.0.0@stephgemset
+fi
